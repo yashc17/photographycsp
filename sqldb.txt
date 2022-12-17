@@ -1,0 +1,13 @@
+#### mySQL script to create the database ####
+
+
+create database contactform;
+use contactform;
+create table contacts(
+	ID int not null auto_increment, 
+    fname varchar (100),
+    lname varchar (100), 
+    feedback varchar (1000),
+    primary key (ID));
+    
+describe contacts;
